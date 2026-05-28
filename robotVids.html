@@ -147,6 +147,29 @@
     </figure>
   <p>
 
+  <p>
+    <h2>Southeastern Louisiana University - HCR (Headless Cat Robot) </h2>
+    <figure>
+      <video width="640" controls>
+        <source src="CAT-dynamixel-july26-2010-1.1.mp4" type="video/mp4">
+      </video>
+      
+      <figcaption>
+        <p>The Large Actuator Test Bed (LATB) project was another study in limb control.  This time the goal was to get experience with low cost linear actuators, that is check their
+          viability for use in a quadruped robot.  The lab cart was an ideal body because it could hold batteries, computers, etc.  By using the legs to push the cart around the lab, gait
+          coordination, and leg programming could be done without the need for balancing.</p>
+        
+        <p>The system was controlled using two lap top computers; one controlling the robot walking functions, and another using Virtual Network Computing (VNC), so that the robot could house a 
+          pc for it computational needs, and an another for an operator to monitor/control the direction of the robot's movement.</p>
+
+        <p> The linear actuators were powered by Victor motor speed controllers, using pwm signals from a control board taking signals from the onboard pc.  The control system relied on 
+          process synchronization supported by the Bakery algorithm (semaphores would have been better, I learned that the hard way). Every worked well, until the primary computer's battery
+          failed and the system had to be ported to a differnt computer.  That is when the Bakery algorithm synchronization deficiencies made themselves known.  </p>
+        
+      </figcaption>
+    </figure>
+  <p>
+
     
 
  
