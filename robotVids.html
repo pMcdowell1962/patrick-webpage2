@@ -155,16 +155,20 @@
       </video>
       
       <figcaption>
-        <p>The Large Actuator Test Bed (LATB) project was another study in limb control.  This time the goal was to get experience with low cost linear actuators, that is check their
-          viability for use in a quadruped robot.  The lab cart was an ideal body because it could hold batteries, computers, etc.  By using the legs to push the cart around the lab, gait
-          coordination, and leg programming could be done without the need for balancing.</p>
+        <p>The HCR project was a modernized version of the Robo-kitty from years before.  This time Dynamixel servos were used, instead of RC servos.  The Dynamixel units house small microprocessors 
+          that allow them to be daisy chained together, versus having an individual wire going to each servo.  Another advantage of this system is that the engineering information from the
+          servo can be read, and provide valuable feedback, like servo position, stall, etc. This can be a game changer when building robots, because a separate set of sensors on the robot's
+          limbs can be avoided.  </p>
         
-        <p>The system was controlled using two lap top computers; one controlling the robot walking functions, and another using Virtual Network Computing (VNC), so that the robot could house a 
-          pc for it computational needs, and an another for an operator to monitor/control the direction of the robot's movement.</p>
+        <p>The system was controlled using an Arduino board that was set up for controlling the Dynamixel servos.</p>
 
-        <p> The linear actuators were powered by Victor motor speed controllers, using pwm signals from a control board taking signals from the onboard pc.  The control system relied on 
-          process synchronization supported by the Bakery algorithm (semaphores would have been better, I learned that the hard way). Every worked well, until the primary computer's battery
-          failed and the system had to be ported to a differnt computer.  That is when the Bakery algorithm synchronization deficiencies made themselves known.  </p>
+        <p> The robot's body and legs were constucted using Bioloid robot brackets and other parts.  </p>
+
+        <p> So was this more sucessful than the original.  In some ways yes, others, not so much.  The servos and control system were a step up, but the Bioloid parts were heavy, and not
+          really well suited for a cat like robot.</p>
+
+        <p> Both robots suffer from huge mechanical inefficiencies due to the knee actuator servo being directly mounted to the robots knee.  In order to build an efficient robot, a
+          control rod/tendon like system should be used. </p>
         
       </figcaption>
     </figure>
