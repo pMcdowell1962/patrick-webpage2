@@ -5,27 +5,79 @@
 
   <style>
     body {
-      background-color: rgba(80, 40, 140, 0.5); /* Purple ish */
-      color: black;
+      background-color: rgb(80, 40, 140);
+      color: #222;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: rgb(80, 40, 140);
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .link-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .link-list li {
+      margin: 15px 0;
+    }
+
+    .link-list a {
+      display: block;
+      background-color: rgb(80, 40, 140);
+      color: white;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    .link-list a:hover {
+      background-color: rgb(60, 25, 110);
     }
   </style>
 </head>
 
 <body>
-  <img src="patrick.jpg" alt="Patrick McDowell" width="300">
-  <h1>Patrick's Web Page</h1>
 
-  <p>Pick what you want to look at:</p>
+  <main>
+    <img src="patrick.jpg" alt="Patrick McDowell" width="300">
 
-  <ul>
-    <li><a href="classNotesPage.html">Notes for Various Courses Taught</a></li>
-    <li><a href="robotVids.html">Videos of old robots projects </a></li>
-    <li><a href="someOfMyPapers.html">Selected Papers </a></li>
-    <p>
-      <a href="Patrick-McDowell-Vita-2025.pdf">
-        Patrick McDowell's Vita
-      </a>
-  </p>
-  </ul>
+    <h1>Patrick McDowell</h1>
+
+    <p class="subtitle">
+      Teaching, robotics, computing, and selected projects
+    </p>
+
+    <ul class="link-list">
+      <li><a href="classNotesPage.html">Notes for Various Courses Taught</a></li>
+      <li><a href="robotVids.html">Videos of Old Robot Projects</a></li>
+      <li><a href="someOfMyPapers.html">Selected Papers</a></li>
+      <li><a href="Patrick-McDowell-Vita-2025.pdf">Patrick McDowell's Vita</a></li>
+    </ul>
+  </main>
+
 </body>
 </html>
