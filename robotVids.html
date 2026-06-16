@@ -1,200 +1,215 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Videos of old robots that I built or worked on</title>
+  <title>Videos of Old Robots</title>
+
   <style>
     body {
-      background-color: rgba(80, 40, 140, 0.5); /* Purple ish */
-      color: black;
+      background-color: rgb(110, 80, 170);
+      color: #222;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 18px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(80, 40, 140);
+    }
+
+    section {
+      margin: 35px 0;
+      padding: 20px;
+      border-radius: 14px;
+      background-color: #f5f2fa;
+    }
+
+    h2 {
+      color: rgb(80, 40, 140);
+    }
+
+    video {
+      max-width: 100%;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      text-align: left;
+    }
+
+    a {
+      color: rgb(80, 40, 140);
+      font-weight: bold;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 30px;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Videos of old robots that I built or worked on</h1>
+<main>
 
-  <p>
+  <h1>Videos of Old Robots That I Built or Worked On</h1>
+
+  <section>
     <h2>LSU RoboKitty - Early Walking Experiment</h2>
+
     <figure>
       <video width="640" controls>
         <source src="learning-to-walk-early-robotiger.mp4" type="video/mp4">
       </video>
+
       <figcaption>
-        <p>This video shows the robo kitty, a project that I worked on at LSU in the early 2000's, while working in the old Robotics Research Lab (RRL) 
-        in Coates hall at the LSU Baton Rouge campus.</p>
-        
-        <p>At Dr. S.S Iyengar's bidding, I designed (loose use of that word) and built this "cat" robot using RC servo's and a small control board.  My intention was for it to "learn" how to walk, and my
-        idea to accomplish this was to use a genetic algorithm (GA).  I had done this in simulation during my masters degree to train some neural networks to control a 3 legged
-        "bug" and it worked.</p>
-        
-        <p>Well, simulation and physical equipment are different in many ways; the time and physical toll on the robot being the key
-        differences.  Of course I was not aware of this then, but after a few hundred robot walks, breeding, ranking etc. it was apparent.  This video shows
-        some of the later results.  The walking distance of the robot actually grew by about double, but still, we had to switch to a different method before
-        we broke the robot.</p>
-        
+        <p>This video shows the RoboKitty, a project that I worked on at LSU in the early 2000s, while working in the old Robotics Research Lab (RRL) in Coates Hall at the LSU Baton Rouge campus.</p>
+
+        <p>At Dr. S. S. Iyengar's bidding, I designed and built this “cat” robot using RC servos and a small control board. My intention was for it to learn how to walk, and my idea to accomplish this was to use a genetic algorithm.</p>
+
+        <p>Simulation and physical equipment are different in many ways; the time and physical toll on the robot being the key differences. After a few hundred robot walks, breeding, ranking, etc., that became apparent. This video shows some of the later results.</p>
       </figcaption>
     </figure>
-  <p>
+  </section>
 
-  <p>
+  <section>
     <h2>LSU RoboKitty - Later Walking Experiments</h2>
+
     <figure>
       <video width="640" controls>
         <source src="robokitty-walk.mp4" type="video/mp4">
       </video>
+
       <video width="640" controls>
         <source src="robokitty-and-mitzy.mp4" type="video/mp4">
       </video>
+
       <figcaption>
-        <p>The videos show the robo kitty walking using gait control and leg movement software. The system worked using LabView software generating
-        control signals which were sent out the RS232 port of the computer to SSC-32 servo controller.</p>
-        
-        <p>This is the same robot, and servo control system as 
-        used in the earlier experiments, however the new software control was much quicker and less detrimental to the robot's locomotion hardware.  In the 
-        second video you can Mitzy (siamese cat) coming to check out the robot.</p>
-        
+        <p>The videos show the RoboKitty walking using gait control and leg movement software. The system worked using LabVIEW software generating control signals, which were sent out the RS232 port of the computer to an SSC-32 servo controller.</p>
+
+        <p>This is the same robot and servo control system as used in the earlier experiments. However, the new software control was much quicker and less detrimental to the robot's locomotion hardware. In the second video, you can see Mitzy, a Siamese cat, coming to check out the robot.</p>
       </figcaption>
     </figure>
-  </p>
+  </section>
 
-  
-  <p>
-  <h2> Associated Papers and Presentations </h2>
-    <a href="McDowell-etal.pdf">
-      Open Robo-Kitty associated paper
-    </a>
-  </p>
-  <p>
-    <a href="catConUSM.pdf">
-      Open Robo-Kitty Powerpoint given at University of Southern Mississippi, October of 2000
-    </a>
-  </p>
+  <section>
+    <h2>Associated Papers and Presentations</h2>
 
-  <p>
-    <h2>Naval Research Lab, Stennis Ms - Robot Formation Maneuvering Experiments</h2>
+    <p>
+      <a href="McDowell-etal.pdf">Open RoboKitty Associated Paper</a>
+    </p>
+
+    <p>
+      <a href="catConUSM.pdf">Open RoboKitty PowerPoint Given at University of Southern Mississippi, October 2000</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Naval Research Lab, Stennis, MS - Robot Formation Maneuvering Experiments</h2>
+
     <figure>
       <video width="640" controls>
         <source src="nrl-roboline-acoustic-following.mp4" type="video/mp4">
       </video>
+
       <video width="640" controls>
         <source src="nrl-tracking-system-short.mp4" type="video/mp4">
       </video>
+
       <figcaption>
-        <p>These videos the first stages of robot formation maneuvering experiments conducted at NRL in the UNCL (Unmanned Navigation Control Lab) by myself, 
-          Dr. Brian Bourgeois, Marvin Roe, and Don Brandon. We also had excellent help from Josh Miceli, Dustin Marmalich, John "Kerry" Herrington, and others. </p>
-        
-        <p>Our goal was to use relative positioning to widen the sensor footprint of autonomous robots.  There was to be a lead robot, with followers whose purpose was to extend
-        the sensing capability of the leader.  The end goal was to use this system underwater, thus the acoustic tracking.</p>  
-        
-        <p>The robots detect each other by sensing an
-        acoustic chirp (clearly audible in the first video) and following it.  Each robot followed a chirp in an assigned frequency band.  In the lab environment, the 
-        severe echoing made it a difficult proposition, but the chirping worked.  The system was tested outside also, and its performance was markedly better.</p>
+        <p>These videos show the first stages of robot formation maneuvering experiments conducted at NRL in the UNCL by myself, Dr. Brian Bourgeois, Marvin Roe, and Don Brandon. We also had excellent help from Josh Miceli, Dustin Marmalich, John “Kerry” Herrington, and others.</p>
 
-        <p>The second video shows the tracking software used.  It was developed so that robot's following performance could be measured.  </p>
+        <p>Our goal was to use relative positioning to widen the sensor footprint of autonomous robots. There was to be a lead robot, with followers whose purpose was to extend the sensing capability of the leader. The end goal was to use this system underwater, thus the acoustic tracking.</p>
 
-        <p>All of this work was done at Stennis Space Center Ms. for NRL in the early 2000's</p>
-        
+        <p>The robots detect each other by sensing an acoustic chirp and following it. Each robot followed a chirp in an assigned frequency band. In the lab environment, severe echoing made this difficult, but the chirping worked.</p>
       </figcaption>
     </figure>
+
+    <figure>
       <video width="640" controls>
         <source src="nrl-pool-test3-2.mp4" type="video/mp4">
       </video>
-      <figcaption>
-        <p>This video shows testing of the development of the next stage of the formation maneuvering project, water based vehicles.  The acoustics for the land
-        systems was refined well enough for it work, so it was decided that we needed to take the next step.</p>
-        
-        <p>Model boats were selected to be the water
-        "robots".  Much work was put into this, including fitting the robots with PC based computer systems, working with hydrophones, etc., but in the 
-        end the electronic interference in the small confines of the boat model proved to be a daunting problem that was not solved to my knowledge.</p>
-        
-      </figcaption>
-    <figure>
-      
-    </figure>
-  </p>
 
-  <p>
+      <figcaption>
+        <p>This video shows testing of the next stage of the formation maneuvering project: water-based vehicles. Model boats were selected to be the water “robots.” Much work was put into this, including fitting the robots with PC-based computer systems and working with hydrophones.</p>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
     <h2>Southeastern Louisiana University - Robot Hockey</h2>
+
     <figure>
       <video width="640" controls>
         <source src="SLU-matt-lakin-early-hocky-robot.mp4" type="video/mp4">
       </video>
+
       <video width="640" controls>
         <source src="SLU-improved-hockey.mp4" type="video/mp4">
       </video>
-      <figcaption>
-        <p>Although seemingly unlrelated, I was still focused on learning limb control.  The hockey system was limb control, but no balance; an easier problem for 
-        sure, however depending on how quick the puck is moving, success can be elusive.</p>
-        
-        <p>Several students worked on this project.  Dan Reid and Robert Chaney made large contributions to the project; Matt Lakin's hard work was key to its success, he is in the video on the left.  
-          The video on the right shows some improvement in the tracking and control systems.</p>
 
-        <p> This work started in around 2007 and continued for some time. </p>
-        
+      <figcaption>
+        <p>Although seemingly unrelated, I was still focused on learning limb control. The hockey system was limb control, but with no balance; an easier problem for sure. However, depending on how quickly the puck is moving, success can be elusive.</p>
+
+        <p>Several students worked on this project. Dan Reid and Robert Chaney made large contributions to the project. Matt Lakin's hard work was key to its success; he is in the video on the left. The video on the right shows some improvement in the tracking and control systems.</p>
       </figcaption>
     </figure>
-  <p>
+  </section>
 
-  <p>
+  <section>
     <h2>Southeastern Louisiana University - Large Actuator Test Bed (LATB)</h2>
+
     <figure>
       <video width="640" controls>
         <source src="LATB-walking.mp4" type="video/mp4">
       </video>
-      
-      <figcaption>
-        <p>The Large Actuator Test Bed (LATB) project was another study in limb control.  This time the goal was to get experience with low cost linear actuators, that is check their
-          viability for use in a quadruped robot.  The lab cart was an ideal body because it could hold batteries, computers, etc.  By using the legs to push the cart around the lab, gait
-          coordination, and leg programming could be done without the need for balancing.</p>
-        
-        <p>The system was controlled using two lap top computers; one controlling the robot walking functions, and another using Virtual Network Computing (VNC), so that the robot could house a 
-          pc for it computational needs, and an another for an operator to monitor/control the direction of the robot's movement.</p>
 
-        <p> The linear actuators were powered by Victor motor speed controllers, using pwm signals from a control board taking signals from the onboard pc.  The control system relied on 
-          process synchronization supported by the Bakery algorithm (semaphores would have been better, I learned that the hard way). Every worked well, until the primary computer's battery
-          failed and the system had to be ported to a differnt computer.  That is when the Bakery algorithm synchronization deficiencies made themselves known.  </p>
-        
+      <figcaption>
+        <p>The Large Actuator Test Bed project was another study in limb control. This time the goal was to get experience with low-cost linear actuators and check their viability for use in a quadruped robot.</p>
+
+        <p>The system was controlled using two laptop computers: one controlling the robot walking functions, and another using Virtual Network Computing (VNC), so that the robot could house a PC for its computational needs while an operator monitored and controlled movement.</p>
+
+        <p>The linear actuators were powered by Victor motor speed controllers, using PWM signals from a control board taking signals from the onboard PC. The control system relied on process synchronization supported by the Bakery algorithm. Everything worked well until the primary computer's battery failed and the system had to be ported to a different computer.</p>
       </figcaption>
     </figure>
-  <p>
+  </section>
 
-  <p>
-    <h2>Southeastern Louisiana University - HCR (Headless Cat Robot) </h2>
+  <section>
+    <h2>Southeastern Louisiana University - HCR (Headless Cat Robot)</h2>
+
     <figure>
       <video width="640" controls>
         <source src="CAT-dynamixel-july26-2010-1.1.mp4" type="video/mp4">
       </video>
-      
+
       <figcaption>
-        <p>The HCR project was a modernized version of the Robo-kitty from years before.  This time Dynamixel servos were used, instead of RC servos.  The Dynamixel units house small microprocessors 
-          that allow them to be daisy chained together, versus having an individual wire going to each servo.  Another advantage of this system is that the engineering information from the
-          servo can be read, and provide valuable feedback, like servo position, stall, etc. This can be a game changer when building robots, because a separate set of sensors on the robot's
-          limbs can be avoided.  </p>
-        
-        <p>The system was controlled using an Arduino board that was set up for controlling the Dynamixel servos.</p>
+        <p>The HCR project was a modernized version of the RoboKitty from years before. This time Dynamixel servos were used instead of RC servos.</p>
 
-        <p> The robot's body and legs were constucted using Bioloid robot brackets and other parts.  </p>
+        <p>The Dynamixel units house small microprocessors that allow them to be daisy chained together, rather than having an individual wire going to each servo. Another advantage is that engineering information from the servo can be read, providing feedback such as servo position and stall conditions.</p>
 
-        <p> So was this more sucessful than the original?  In some ways yes, others, not so much.  The servos and control system were a step up, but the Bioloid parts were heavy, and not
-          really well suited for a cat like robot.</p>
+        <p>The system was controlled using an Arduino board set up for controlling the Dynamixel servos. The robot's body and legs were constructed using Bioloid robot brackets and other parts.</p>
 
-        <p> Both robots suffer from huge mechanical inefficiencies due to the knee actuator servo being directly mounted to the robots knee.  In order to build an efficient robot, a
-          control rod/tendon like system should be used. </p>
-        
+        <p>Was this more successful than the original? In some ways yes, in others, not so much. The servos and control system were a step up, but the Bioloid parts were heavy and not really well suited for a cat-like robot.</p>
       </figcaption>
     </figure>
-  <p>
+  </section>
 
-    
-
- 
-  <p>
-    <a href="index.html">
-      Back to Home Page
-    </a>
+  <p class="back-link">
+    <a href="index.html">Back to Home Page</a>
   </p>
+
+</main>
 
 </body>
 </html>
